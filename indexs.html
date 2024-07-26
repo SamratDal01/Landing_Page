@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<title>Band Website</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#band">Band</a>
+  <a href="#tour">Tour</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Slide Show -->
+<section class="slideshow-container">
+  <img class="mySlides" src="istockphoto-502088147-612x612.jpg" style="width:100%">
+  <img class="mySlides" src="live-bands-india.jpg" style="width:100%">
+  <img class="mySlides" src="photo-1499364615650-ec38552f4f34.avif" style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content band-description">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify">We all have different ways of grooving, and these band quotes will get you in your groove.
+
+    Bands are more than an iconic part of our culture.
+    
+    There is usually something undeniably cool about somebody who is in a band.
+    
+    Bands have the power to do more than just perform music.
+    
+    Sure, they give us the gift of music and share their talent with us, but they are also like a little family.
+    
+    Some bands are a healthy family, while others can have a bit of dysfunction among the members.
+    
+    These band quotes from drummers, guitarists, and lead singers give us a glimpse of life in a band.
+    
+    Each band is unique, with its own sound, dynamic, and musical genius.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey band-members">
+  <article class="w3-quarter">
+    <p>John</p>
+    <img src="singer.jpg" alt="Random Name" style="width:100%">
+    <p>JOHNEY THE SINGER</p>
+  </article>
+  <article class="w3-quarter">
+    <p>Paul</p>
+    <img src="piano.jpg" alt="Random Name" style="width:100%">
+    <p>PAULEE THE PIANOIST</p>
+  </article>
+  <article class="w3-quarter">
+    <p>Ringo</p>
+    <img src="220425_r40285 - Copy.webp" alt="Random Name" style="width:100%">
+    <p>RINGO THE EVENT MANAGER</p>
+  </article>
+  <article class="w3-quarter">
+    <p>Sam</p>
+    <img src="guitar.jpg" style="width:100%">
+    <p>SAM THE GUITARIST</p>
+  </article>
+</section>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
